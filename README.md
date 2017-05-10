@@ -12,3 +12,10 @@ Quartz.NET 來自 java，為一成熟且受迎歡的 open srouce。
 4. 可隱密設定組態。為了安全性不使用可公開編輯的組態檔。
 5. 可持續的(persistent)。即執行狀態可存入DB等儲存體。
 6. 記Log。
+## 開發環境
+* Windows 10
+* .NET 4.5
+* Quartz.NET 2.5
+* Common logging 3.3.1
+* NLog 4
+* IDE: Visual Studio 2013
