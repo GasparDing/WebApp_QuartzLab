@@ -1,0 +1,19 @@
+﻿quartz.scheduler.instanceName = MyScheduler
+quartz.scheduler.instanceId = AUTO
+quartz.threadPool.type = Quartz.Simpl.SimpleThreadPool, Quartz
+quartz.threadPool.threadCount = 10
+quartz.threadPool.threadPriority = Normal
+
+quartz.scheduler.idleWaitTime = 5000
+
+quartz.jobStore.misfireThreshold = 60000
+quartz.jobStore.type = Quartz.Impl.AdoJobStore.JobStoreTX, Quartz
+quartz.jobStore.tablePrefix = QRTZ_
+quartz.jobStore.clustered = false
+quartz.jobStore.driverDelegateType = Quartz.Impl.AdoJobStore.SqlServerDelegate, Quartz
+quartz.jobStore.lockHandler.type = Quartz.Impl.AdoJobStore.UpdateLockRowSemaphore, Quartz
+quartz.jobStore.useProperties = true
+  
+quartz.jobStore.dataSource = default
+quartz.dataSource.default.connectionString = Data Source=relynb\sqlexpress;Initial Catalog=Quartz;Integrated Security=True                                                                              
+quartz.dataSource.default.provider = SqlServer-20
